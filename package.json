@@ -2,9 +2,10 @@
   "name": "empaquetadores-parcel",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "source": "./src/index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "parcel build src/index.html --public-url ./",
+    "start": "parcel serve --port 8080 src/index.html"
   },
   "keywords": [],
   "author": "",
